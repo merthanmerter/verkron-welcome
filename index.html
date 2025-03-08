@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VERKRON</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #1a1a1a; /* Smoked black */
-            color: white;
-            font-family: 'Inter', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-transform: uppercase;
-            font-size: 3rem;
-            font-weight: 700;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verkron</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+  </style>
 </head>
-<body>
-    VERKRON
+
+<body class="bg-[#111111] text-white font-[Inter] h-screen flex items-center justify-center px-4">
+  <div
+    class="w-full sm:w-4/5 max-w-full sm:max-w-screen-lg grid grid-rows-[auto_1fr_auto] grid-cols-1 h-auto sm:h-[60vh]">
+
+    <div class="text-xl sm:text-xl font-bold uppercase text-center sm:text-left pb-4">VERKRON</div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <p class="text-xs text-zinc-400 font-mono self-end text-center sm:text-left mx-auto sm:mx-0">
+        Verkron provides expert solutions in pricing strategies, operations, inventory management, technical drafting,
+        corporate branding, supply chain optimization, and industrial product design. Our goal is to enhance efficiency,
+        drive innovation, and support businesses in achieving operational excellence.
+      </p>
+
+      <form action="https://formspree.io/f/xgvawdpd" method="POST"
+        class="text-xs text-zinc-500 flex flex-col gap-1 w-full sm:max-w-[60%] self-end sm:ml-auto">
+        <input type="email" name="email" placeholder="Email" required
+          class="px-2 py-1 border border-zinc-700 bg-transparent text-white rounded-sm w-full focus:outline-none focus:ring-1 focus:ring-zinc-500">
+        <textarea name="message" placeholder="Message" required rows="3"
+          class="px-2 py-1 border border-zinc-700 bg-transparent text-white rounded-sm w-full focus:outline-none focus:ring-1 focus:ring-zinc-500"></textarea>
+        <button type="submit"
+          class="px-3 py-1 border border-zinc-700 bg-transparent text-white rounded-sm cursor-pointer hover:bg-zinc-800 transition">
+          Send
+        </button>
+
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>
